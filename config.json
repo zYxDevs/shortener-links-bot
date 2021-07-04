@@ -1,5 +1,5 @@
 {
   "tgtoken": "3401151238803:AAHV2Njts4lEASdqwedVyQs2_CYoqQL0sDsr1o",
-  "shtoken": "4d23fcac5bc94834a5dd1d9649aqweg1",
+  "shtoken": "63fe3f360511428fa580f708fc614193",
   "db": "mongodb://localhost:27017/shortener-links-bot"
 }
