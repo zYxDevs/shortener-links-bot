@@ -5,7 +5,7 @@ var config = require('./config');
 
 require('./db');
 
-var app = new Telegraf(config.tgtoken, { username: 'shortenerlinksbot' });
+var app = new Telegraf(config.tgtoken, { username: 'ShrtenBot' });
 
 app.telegram.getMe().then(botInfo => app.options.username = botInfo.username);
 
@@ -27,7 +27,7 @@ app.command('start', ctx => {
 });
 
 app.command('help', ctx => {
-  ctx.reply('Any message bot receives as a link and tries to reduce it.\n\n/long <link> — decrypt your link (show original).\n\nMade by @bifot.', Extra.markdown());
+  ctx.reply('Any message bot receives as a link and tries to reduce it.\n\n/long <link> — decrypt your link (show original).\n\nPowered by @SpreadNetworks.', Extra.markdown());
 });
 
 app.hears(/\/long (.+)/, ctx => {
